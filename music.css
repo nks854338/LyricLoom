@@ -1,0 +1,305 @@
+* {
+    font-family: "Mukta", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.secondSection{
+    margin-bottom: 100px;
+}
+
+/* header css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    margin: 0.5%;
+}
+
+.navbar .logo {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.searchBar {
+    width: 60%;
+    height: 50px;
+    border: black 1px solid;
+    display: flex;
+    border-radius: 30px;
+}
+
+.searchBar .search {
+    width: 95%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 20px;
+    padding: 0 3%;
+}
+
+
+.searchBar .searchIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.signIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.signInBtn {
+    height: 30px;
+    width: 70px;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.signInBtn:hover {
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(194, 194, 194);
+}
+
+.wishlist{
+    font-size: 20px;
+    border: none;
+}
+
+.mode{
+    font-size: 20px;
+    border: none;
+}
+
+header .categries ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 40px;
+}
+
+header .categries ul li{
+    font-size: 20px;
+}
+
+header .categries ul li:hover{
+    border-bottom: solid 1px;
+}
+
+/* header css end */
+
+
+
+/* first section css start */
+
+.firstSection {
+    height: 350px;
+}
+
+.firSecComponent {
+    height: 180px;
+    background-color: rgb(0, 0, 0);
+}
+
+.firSecComp1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 200;
+    margin: 3vmin;
+}
+
+.firSecComp2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1%;
+}
+
+.firSecBox {
+    margin: 5px;
+    text-align: center;
+}
+
+.firSecBox:hover{
+    border-bottom: solid 1px;
+}
+
+.imgCard {
+    display: inline;
+    justify-content: center;
+}
+
+.image {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.image:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(79, 78, 78, 0.779);
+}
+
+.proImg{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: beige;
+}
+
+/* first section css end */
+
+
+
+/* second section css start */
+
+#productList {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainheading{
+    font-size: 40px;
+    margin: 15px;
+}
+
+.songbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background-color: #555;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#songLiPlay{
+    border-radius: 50%;
+    height: 8vmin;
+    font-size: 4vmin;
+    width: 8vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e45710;
+}
+
+.songName{
+    font-size: 3vmin;
+}
+
+
+
+/* second section css end */
+
+/* third section css start */
+.thirdSection{
+    background-color: #ddd;
+}
+
+.action{
+    width: 95%;
+    margin: auto;
+    padding-top: 2vmin;
+}
+
+.seekbar{
+    height: 5px;
+    width: 100%;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    background-color: #555;
+    border-radius: 50%;
+    position: relative;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.option {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    gap: 25px;
+}
+
+.option div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #0a0d0e;
+    height: 5vmin;
+    width: 5vmin;
+}
+
+.option div i{
+    color: #fff;
+}
+
+.option div:hover , .icon:hover {
+    background-color: #e45710;
+    box-shadow: 0px 0px 10px #f166218b;
+}
+
+#play {
+    font-size: 4.5vmin;
+    height: 7.5vmin;
+    width: 7.5vmin;
+    background-color: #e45710;
+}
+
+/* third section css end */
+
+/* footer css */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+    height: 100px;
+}
+
+.heart {
+    color: red;
+    font-size: 50px;
+    margin: 20px;
+}
+
+
+/* footer css end*/

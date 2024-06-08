@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Your CSS styles */
+    </style>
+    <title>Music app</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Music App</div>
+        <div class="searchbar">
+            <form class="d-flex" role="search">
+                <input class="input" type="search" placeholder="Search" id="input">
+                <button class="search" type="submit" id="search">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="productList">
+            <div>
+                <img src="#" alt="..." id="img">
+                <div>
+                     <h5 class="heading" id="title">cham cham</h5>
+                     <p class="para" id="artist">Artist</p>
+                     <audio controls id="music">
+                        <source src="http://www.lyricsnmusic.com/coldplay" type="audio/mp3">
+                     </audio>
+                </div>
+            </div>
+            <!-- Product details will be inserted here -->
+        </div>
+    </div>
+    <footer>
+        created with <span class="heart">&#9829;</span>by Nandani
+    </footer>
+
+    <!-- <script>
+        let title = document.getElementById('title');
+        let artist = document.getElementById('artist');
+        let music = document.getElementById('music');
+        let img = document.getElementById('img');
+        const url = 'https://genius-song-lyrics1.p.rapidapi.com/search/?q=cham%20cham&per_page=10&page=1';
+
+        async function fetchSong() {
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': '558cb1ce98msh0a0bdc77c0df33ap1c5da9jsn524dbe9c0882',
+                    'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
+                }
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const result = await response.json(); 
+                console.log(result);
+
+                // Check if the hits array is not empty before accessing its first element
+                if (result.response.hits.length > 0) {
+                    title.innerText = result.hits[0].result.title;
+                    artist.innerText = result.hits[0].result.primary_artist.name;
+                    music.src = result.hits[0].result.url;
+                    img.src = result.response.hits[0].result.song_art_image_url;
+                } else {
+                    console.log("No songs found.");
+                }
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchSong();
+    </script> -->
+</body>
+
+</html>
