@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="music.css" />
+    <title>Music site</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">Music</div>
+        <div class="searchBar">
+          <input
+            type="search"
+            class="search"
+            placeholder="search for music..."
+          />
+          <i
+            class="fa-solid fa-magnifying-glass searchIcon"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <div class="signIn">
+          <button class="signInBtn">Sign In</button>
+          <button class="wishlist">
+            <i class="fa-solid fa-heart" style="color: red"></i>
+          </button>
+          <button class="mode">
+            <i class="fa-solid fa-moon" style="color: black"></i>
+          </button>
+        </div>
+      </div>
+      <div class="categries">
+        <ul>
+          <li>New Releases</li>
+          <li>Trending Now</li>
+          <li>All Time Hits</li>
+          <li>Indie Music</li>
+          <li>Devotional</li>
+          <li>Romance</li>
+          <li>Mood</li>
+          <li>Classical</li>
+          <li>International</li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="firSecComponent">
+          <div class="firSecComp1">Top Indie Artists</div>
+          <div class="firSecComp2">
+            <div class="firSecBox1 firSecBox">
+              <div class="image">
+                <img
+                  src="https://3.bp.blogspot.com/-h8xPYD07uh0/Wr835tAa5EI/AAAAAAAABFk/RhF22VQEfqoflTJedHKJOO3T5OTMnsUawCLcBGAs/s1600/Arijit%2BSingh.jpg"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">Arijit Singh</p>
+            </div>
+            <div class="firSecBox2 firSecBox">
+              <div class="image">
+                <img
+                  src="https://wallpaperaccess.com/full/2751987.jpg"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">Jubin Nautiyal</p>
+            </div>
+            <div class="firSecBox3 firSecBox">
+              <div class="image">
+                <img
+                  src="https://static.toiimg.com/photo/81450030.cms"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">Shreya Ghoshal</p>
+            </div>
+            <div class="firSecBox4 firSecBox">
+              <div class="image">
+                <img
+                  src="https://cdn.platinumlist.net/upload/artist/a_r_rahman_90-mobile1571129450.jpg"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">AR Rahman</p>
+            </div>
+            <div class="firSecBox5 firSecBox">
+              <div class="image">
+                <img
+                  src="https://www.masala.com/cloud/2023/01/30/alka-yagnik-1-768x576.jpg"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">Alka Yagnik</p>
+            </div>
+            <div class="firSecBox5 firSecBox">
+              <div class="image">
+                <img
+                  src="https://wallpapercave.com/wp/wp6752704.jpg"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">Kumar Sanu</p>
+            </div>
+            <div class="firSecBox6 firSecBox">
+              <div class="image">
+                <img
+                  src="https://wallpapercave.com/wp/wp4101519.jpg"
+                  alt=""
+                  class="proImg"
+                />
+              </div>
+              <p class="proNam">Sonu Nigam</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secondSection">
+        <div class="mainheading">popular songs</div>
+        <div id="productList">
+          <div class="songList">
+            <li>
+              <div class="songbox">
+                       <div class="songInfo">
+                         <div class="songName">${song.replaceAll("20%"," ")}</div>
+                         <div class="singer">kjhgfyuii</div>
+                       </div>
+                       <div class="songPlayBtn">
+                         <div id="songLiPlay">
+                           <i class="fa-solid fa-circle-play" style="color: #566573"></i>
+                         </div>
+                       </div>
+                     </div>
+             </li>
+          </div>
+        </div>
+      </section>
+
+      <section class="thirdSection">
+        <div class="action">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="option">
+          <div id="backward">
+            <i class="fa-solid fa-backward-fast" style="color: #566573"></i>
+          </div>
+          <div id="play">
+            <i class="fa-solid fa-circle-play" style="color: #566573"></i>
+          </div>
+          <div id="forward">
+            <i class="fa-solid fa-forward-fast" style="color: #566573"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>created with <span class="heart">&#9829;</span>by Nandani</footer>
+  </body>
+
+  <script src="music.js"></script>
+</html>
